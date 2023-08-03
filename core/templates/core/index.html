@@ -21,7 +21,7 @@
                         <p class="card__title">{{ item.name }}</p>
                         <p class="card__text">{{ item.description|slice:"40" }}...</p>
                         <p class="text-gray-500">Price: {{ item.price }}</p>
-                        <a class="card__button" href="#">Read More</a>
+                        <a class="card__button" href="{% url 'item:detail' item.id%}">Read More</a>
                         </div>
                     </div>
                 {% endfor %}
