@@ -1,6 +1,50 @@
 {% extends 'core/base.html' %}
+{% load static %}
 {% block title %}Welcome{% endblock %}
 
 {% block content %}
-<h1>The front page</h1>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    </head>
+    <body>
+        <div class="mt-6 px-6 py-12 bg-gray-100 rounded-xl">
+            <h2 class="mb-12 text-2xl text-center"><strong>Newest items</strong></h2>
+    
+            <div class="grid grid-cols-3 gap-3">
+                {% for item in items %}
+                    <div class="card">
+                        <div class="card__image">
+                            <img src="{{ item.image.url }}" class="rounded-t-xl">
+                        </div>
+                        <div class="card__content">
+                        <p class="card__title">{{ item.name }}</p>
+                        <p class="card__text">{{ item.description|slice:"40" }}...</p>
+                        <p class="text-gray-500">Price: {{ item.price }}</p>
+                        <a class="card__button" href="#">Read More</a>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="mt-6 px-6 py-12 bg-gray-100 rounded-xl">
+            <h2 class="mb-12 text-2xl text-center"><strong>Categories</strong></h2>
+    
+            <div class="grid grid-cols-3 gap-3">
+                {% for category in categories %}
+                    <div>
+                        <a href="#">
+                            <div class="rounded-b-xl" id="category-card-1">
+                                <div class="p-6 bg-white rounded-b-xl" id="category-card-2">
+                                    <h2 class="text-2xl"><strong>{{ category.name }}</strong></h2>
+                                    <p class="text-gray-500">{{ category.items.count }}</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </body>
+</html>
 {% endblock %}
