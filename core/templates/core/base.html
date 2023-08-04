@@ -11,18 +11,18 @@
 </head>
     <body>
       <nav id="navbar" class="py-6 px-6 flex justify-between items-center border-b border-grey-200">
-        <a href="/" class="flex items-center text-xl font-bold">
+        <a id="puddle-label-navbar" href="/" class="flex items-center text-xl font-bold">
           <img src="https://freesvg.org/img/FX13_bag.png" alt="Logo" class="mr-2 h-8">
           Puddle
         </a>
 
         <div class="space-x-6">
-          <a href="#" class="text-lg font-semibold hover:text-gray-500">New item</a>
-          <a href="#" class="text-lg font-semibold hover:text-gray-500">Browse</a> 
+          <a id="new-item-label-navbar" href="#" class="text-lg font-semibold hover:text-gray-500">New item</a>
+          <a id="browse-label-navbar" href="#" class="text-lg font-semibold hover:text-gray-500">Browse</a> 
           <a href="{% url 'core:signup' %}" class="py-3">
             <button class="sign-up-btn">Sign up</button>          
           </a>
-          <a href="#" class="py-3">
+          <a href="{% url 'core:login' %}" class="py-3">
             <button class="login-btn">Login</button>          
           </a>
         </div>
