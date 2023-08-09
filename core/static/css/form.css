@@ -1,0 +1,16 @@
+body{
+    background-image: url("https://cutewallpaper.org/28/deep-purple-background-wallpaper/1712911540.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+#navbar {
+    background: transparent;
+    background-size: cover;
+}
+#puddle-label-navbar,#new-item-label-navbar,#browse-label-navbar{
+    color:#fff;
+}
