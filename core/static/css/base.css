@@ -1,12 +1,18 @@
 #navbar {
-    background-image: url("https://images3.alphacoders.com/104/1044851.jpg");
+    background-color: #131921;
+}
+#puddle-label-navbar,#new-item-label-navbar,#browse-label-navbar{
+    color:#fff;
+}
+body{
+    background-color: #131921;
 }
 .sign-up-btn {
     width: 115px;
     height: 47px;
     font-size: 1.1em;
     cursor: pointer;
-    background-image: linear-gradient(90deg,#1c1c1c,teal);
+    background-image: linear-gradient(90deg,teal,teal);
     color: #fff;
     border: none;
     border-radius: 7px;
@@ -33,7 +39,7 @@
     height: 47px;
     font-size: 1.1em;
     cursor: pointer;
-    background-image: linear-gradient(90deg,#1c1c1c,#6220fb);
+    background-image: linear-gradient(90deg,#6220fb,#6220fb);
     color: #fff;
     border: none;
     border-radius: 7px;

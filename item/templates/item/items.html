@@ -11,6 +11,7 @@
 <body>
     <div class="main-container">
         <div class="filter-section">
+            <p class="category-header">Search🔍</p>
             <form method="GET" action="{% url 'item:items' %}">
                 <div class="search-bar">
                     <input name="query" type="text" value="{{ query }}" placeholder="Find bike, a chair or a car..">
@@ -19,14 +20,18 @@
             </form>
             <div class="category-section">
                 <p class="category-header">Categories</p>
-                <ul class="category-list">
-                    {% for category in categories %}
-                    <li class="{% if category.id == category_id %}selected-category{% endif %}">
-                        <a href="{% url 'item:items' %}?query={{ query }}&category={{ category.id }}">{{ category.name }}</a>
-                    </li>
-                    {% endfor %}
-                </ul>
-            </div>
+                <div class="category-list-container">
+                    <ul class="category-list">
+                        {% for category in categories %}
+                        <a href="{% url 'item:items' %}?query={{ query }}&category={{ category.id }}">
+                            <li class="{% if category.id == category_id %}selected-category{% endif %} text-white">
+                                {{ category.name }}
+                            </li>
+                        </a>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div><br>
             <div class="clear-filters">
                 <a href="{% url 'item:items' %}" class="clear-button">Clear Filters</a>
             </div>

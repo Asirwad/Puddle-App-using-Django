@@ -1,0 +1,25 @@
+#related-items-container{
+    background-color: #232f3e;
+}
+
+.items-heading {
+    list-style: none;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #6384b0, #6384b0);
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .items-heading:hover {
+      transform: translateY(-2px);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+#description-container{
+    background-color: #232f3e;
+}

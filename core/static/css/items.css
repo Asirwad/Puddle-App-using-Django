@@ -7,15 +7,16 @@ body, h1, h2, h3, p, ul, li {
 
 /* Main Container */
 .main-container {
+    background-color: #232f3e;
+    border-radius: 16px;
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f4f4f4;
 }
 
 /* Filter Section */
 .filter-section {
-    background-color: white;
+    background-color: #131921;
     border-radius: 8px;
     padding: 20px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -51,7 +52,8 @@ body, h1, h2, h3, p, ul, li {
 
 .category-header {
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    color: white;
 }
 
 .category-list li {
@@ -64,6 +66,11 @@ body, h1, h2, h3, p, ul, li {
 
 .category-list li:hover {
     background-color: #f4f4f4;
+    color: black;
+}
+
+.selected-category{
+    background-color: #cc9a05;
 }
 
 .clear-filters {
@@ -71,9 +78,11 @@ body, h1, h2, h3, p, ul, li {
 }
 
 .clear-button {
-    background-color: #ffc107;
+    background-color: #cc9a05;
     color: white;
     border: none;
+    font-size: large;
+    font: bold;
     border-radius: 4px;
     padding: 10px 20px;
     cursor: pointer;
@@ -81,7 +90,7 @@ body, h1, h2, h3, p, ul, li {
 }
 
 .clear-button:hover {
-    background-color: #e0a800;
+    background-color: #ffc71f;
     transform: translateY(-2px);
 }
 
@@ -131,3 +140,8 @@ body, h1, h2, h3, p, ul, li {
     color: #888;
 }
 
+.category-list-container{
+    background-color: #232f3e;
+    padding: 8px;
+    border-radius: 10px;
+}

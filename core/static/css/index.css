@@ -1,3 +1,8 @@
+body, h1, h2, h3, p, ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .card {
     position: relative;
     width: 500px;
@@ -65,27 +70,67 @@
     height: 600px;
     width: 500px;
     background-color: transparent;
-    /* you can put img url here  */
   }
 
   #category-card-1 {
-    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    background-image: linear-gradient(163deg, #e65bff 0%, #3700ff 100%);
     transition: all .3s;
    }
    
    #category-card-2 {
-    background-color: #fff;
+    background-color: #131921;
     transition: all .2s;
    }
    
    #category-card-2:hover {
     transform: scale(0.99);
     border-radius: 10px;
-    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+    box-shadow: 0px 0px 30px 1px rgba(149, 47, 233, 0.3);
    }
 
    #category-card-1:hover {
     transform: scale(0.98);
     border-radius: 10px;
-    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+    box-shadow: 0px 0px 30px 1px rgba(149, 47, 233, 0.3);
    }
+
+.items-heading {
+  list-style: none;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(to right, #301275, #c24dcb);
+  padding: 10px 20px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.items-heading:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#container {
+  background-color: #232f3e;
+  border-radius: 16px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#container:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.category-name {
+  flex: 1;
+  font-size: 28px;
+  color: #fff;
+}
+
+.category-count {
+  font-size: 52px;
+  color: #fff;
+  margin-left: 10px;
+}
