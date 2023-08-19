@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/inbox.css' %}">
     </head>
     <body>
-        <h1 class="mb-6 text-5xl font-semibold">Inbox📫</h1>
+        <h1 class="mb-6 text-5xl text-white font-semibold">Inbox📫</h1>
         {% for i in conversations %}
             <a href="{% url 'conversation:message_detail' i.id %}">
                 <div class="p-6 flex bg-gray-100 rounded-xl">
