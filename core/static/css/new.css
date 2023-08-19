@@ -1,0 +1,143 @@
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72vh;
+}
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px; /* Doubled */
+    height: 640px; /* Doubled */
+    background-color: #343541;
+    border-radius: 16px; /* Doubled */
+    display: flex;
+    flex-direction: column;
+}
+  
+.nav-bar {
+    width: 100%;
+    height: 80px; /* Doubled */
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.nav-bar a {
+    color: #6B6C7B;
+    white-space: nowrap;
+    margin-left: 20px; /* Doubled */
+    user-select: none;
+}
+  
+.close {
+    width: 80px; /* Doubled */
+    height: 80px; /* Doubled */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+  
+.line {
+    position: absolute;
+    width: 40px; /* Doubled */
+    height: 6px; /* Doubled */
+    background-color: #6B6C7B;
+    border-radius: 60px; /* Doubled */
+}
+  
+.line.one {
+    transform: rotate(45deg);
+}
+  
+.line.two {
+    transform: rotate(135deg);
+}
+  
+.messages-area {
+    background-color: green;
+    width: 100%;
+    height: 420px; /* Doubled */
+}
+  
+.sender-area {
+    background-color: #343541;
+    width: 100%;
+    height: 140px; /* Doubled */
+    display: flex;
+    border-radius: 16px; /* Doubled */
+}
+  
+.message {
+    width: 100%;
+    height: 80px; /* Doubled */
+}
+  
+.message.one,
+.message.three,
+.message.five {
+    background-color: #2E2F3A;
+}
+  
+.message.two,
+.message.four,
+.message.six {
+    background-color: #343541;
+}
+  
+.send-img {
+    width: 60px; /* Doubled */
+}
+  
+.send-input {
+    outline: none;
+    display: flex;
+    border: none;
+    background: none;
+    height: 80px; /* Doubled */
+    width: 460px; /* Doubled */
+    border-radius: 14px; /* Doubled */
+    background: none;
+    color: white;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-left: 10px; /* Doubled */
+}
+  
+.send-input::placeholder {
+    color: #828E9E;
+}
+  
+.input-place {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px; /* Doubled */
+    margin-left: 20px; /* Doubled */
+    align-items: center;
+    background-color: #40414F;
+    border-radius: 14px; /* Doubled */
+    height: 80px; /* Doubled */
+    width: 560px; /* Doubled */
+    gap: 10px; /* Doubled */
+    border: 2px solid #2E2F3A; /* Doubled */
+}
+  
+.send {
+    width: 60px; /* Doubled */
+    height: 60px; /* Doubled */
+    background-color: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+  
+.send-icon {
+    width: 34px; /* Doubled */
+}

@@ -31,7 +31,7 @@
                     </p>
                 {% endif %}
                 <div class="mt-10 flex gap-4">
-                    <a href="#">
+                    <a href="{% url 'conversation:new' item.id %}">
                         <button class="flex-grow px-6 py-3 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:ring-blue-300 text-xl">
                             Contact Seller
                         </button>
