@@ -8,22 +8,62 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/form.css' %}">
     </head>
     <body>
-        <h1 class='mb-6 text-3xl'>{{ title }}</h1>
         <form method="POST" action="." enctype="multipart/form-data">
             {% csrf_token %}
-            <div class="space-y-4">
-                {{ form.as_p }}
-            </div>
-            {% if form.errors or form.non_field_errors %}
-                    <div class="mb-3 p-6 bg-red-100 rounded-xl">
-                        {% for field in form %}
-                            {{ field.errors }}
-                        {% endfor %}
-        
-                        {{ form.non_field_errors }}
+            <div class="container">
+                <div class="modal">
+                    <div class="modal__header">
+                        <span class="modal__title">New Item</span>
+                        <button class="button button--icon">
+                            <svg width="24" viewBox="0 0 24 24" height="24" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="none" d="M0 0h24v24H0V0z"></path>
+                                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"></path>
+                            </svg>
+                        </button>
                     </div>
-            {% endif %}
-            <button class="mt-6 button">Submit</button>
+                    <div class="modal__body">
+                        <div class="input">
+                            <label class="input__label">Product Name</label>
+                            {{ form.name }} 
+                            <p class="input__description">The title must contain a maximum of 32 characters</p>
+                        </div>
+                        <div class="input">
+                            <label class="input__label">Category</label>
+                            {{ form.category }} 
+                            <p class="input__description">Select from the list</p>
+                        </div>
+                        <div class="input">
+                            <label class="input__label">Description</label>
+                            {{ form.description }}
+                            <p class="input__description">Give your product a good description so everyone know what's it for</p>
+                        </div>
+                        <div class="input">
+                            <label class="input__label">Price</label>
+                            {{ form.price }} 
+                            <p class="input__description">Price exclusive of GST and third-party fee</p>
+                        </div>
+                        <div class="input">
+                            <label class="input__label">Image</label>
+                            {{ form.image }} 
+                            <p class="input__description">Price exclusive of GST and third-party fee</p>
+                        </div>
+                    </div>
+                    {% if form.errors or form.non_field_errors %}
+                        <div class="px-4 py-3">
+                            <div class="mb-3 p-6 bg-red-100 rounded-xl">
+                                {% for field in form %}
+                                    {{ field.errors }}
+                                {% endfor %}
+                
+                                {{ form.non_field_errors }}
+                            </div>
+                        </div>
+                    {% endif %}
+                    <div class="modal__footer">
+                        <button class="button button--primary" type="submit">Add item</button>
+                    </div>
+                </div>
+            </div>
         </form>
     </body>
 </html>

@@ -9,19 +9,19 @@ class NewItemForm(forms.ModelForm):
 
         widgets = {
             'category': forms.Select(attrs={
-                'class': 'w-full py-6 px-6 rounded-xl border',
+                'class': 'input__field',
             }),
             'name': forms.TextInput(attrs={
-                'class': 'w-full py-6 px-6 rounded-xl border',
+                'class': 'input__field',
             }),
             'description': forms.Textarea(attrs={
-                'class': 'w-full py-6 px-6 rounded-xl border',
+                'class': 'input__field input__field--textarea',
             }),
             'price': forms.TextInput(attrs={
-                'class': 'w-full py-6 px-6 rounded-xl border',
+                'class': 'input__field',
             }),
             'image': forms.FileInput(attrs={
-                'class': 'w-full py-6 px-6 rounded-xl border',
+                'class': 'input__field',
             }),
         }
 
