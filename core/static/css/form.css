@@ -18,6 +18,11 @@ body{
     background: none;
     cursor: pointer;
   }
+.outer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
   
   .container {
     top: 0;
