@@ -81,8 +81,8 @@ We would like to acknowledge the following resources and libraries used in this 
 - <img src="https://www.svgrepo.com/show/353657/django-icon.svg" alt="Django" width="26" align="center"> Django: [↗️](https://www.djangoproject.com/)
 - <img src="https://github.com/Asirwad/CRM-App-using-Django/assets/85600836/5288b5d1-910d-4417-a021-f917790f96d4"
  alt="MySQL" width="25" align="center"> MySQL: [↗️](https://www.mysql.com/)
-- <img src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo-shadow.png"
- alt="PyQt" width="25" align="center"> Bootstrap: [↗️](https://getbootstrap.com/)
+- <img src="https://files.raycast.com/n3pu9p0jifwy2drpkkojlvt4wd85" 
+    alt="tailwind" width="25" align="center"> Tailwind: [↗️](https://tailwindcss.com/)
 
 ## Contact
 
