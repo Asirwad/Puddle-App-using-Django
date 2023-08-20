@@ -97,11 +97,11 @@ body, h1, h2, h3, p, ul, li {
   list-style: none;
   text-align: center;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 400;
   margin-bottom: 20px;
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  background: linear-gradient(to right, #301275,#5f1cfa, #8830e6, #5f1cfa,#301275);
+  background: linear-gradient(to right, #4e688a,#4e688a);
   padding: 10px 20px;
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
@@ -109,7 +109,7 @@ body, h1, h2, h3, p, ul, li {
 
 .items-heading:hover {
     transform: translateY(-2px);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 8px rgba(19, 25, 33,0.5);
 }
 
 #container {
