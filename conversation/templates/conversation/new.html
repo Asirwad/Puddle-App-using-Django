@@ -6,15 +6,16 @@
 
 <html>
     <head>
-        <link rel="stylesheet" type="text/css" href="{% static 'css/new.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/message_detail.css' %}">
     </head>
     <body>
-        <h1 class="mb-6 text-4xl font-semibold">New Conversation</h1>
+        <h1 class="mb-6 text-4xl text-white font-semibold">New Conversation</h1>
         <form method="POST" action=".">
             {% csrf_token %}
             <div class="space-y-4">
                 {{ form.as_p }}
             </div>
+            <br>
             {% if form.errors or form.non_field_errors %}
                     <div class="mb-3 p-6 bg-red-100 rounded-xl">
                         {% for field in form %}
@@ -24,8 +25,19 @@
                         {{ form.non_field_errors }}
                     </div>
             {% endif %}
-            <button class="mt-6 py-4 px-12 text-lg bg-green-500 hover:bg-green-700 rounded-xl text-white">Send</button>
+            <button class="send-button">
+                <div class="svg-wrapper-1">
+                  <div class="svg-wrapper">
+                    <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z" fill="currentColor"></path>
+                    </svg>
+                  </div>
+                </div>
+                <span>Send</span>
+            </button>        
         </form>
+        <br><br><br><br>
     </body>
 </html>
 
